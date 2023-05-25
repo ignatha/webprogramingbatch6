@@ -1,7 +1,3 @@
-# Sesi 1
-Dalam pertemuan sesi 01, diajarkan tentang tools yang dibutuhkan dalam pembuatan website. Juga dijelaskan basic dari pembuatan program dengan HTML.
+# Belajar Langkah Fundamental Untuk Menjadi Web Programmer
 
-software yang diinstall :
-- vscode
-- xampp / laragon
-- git
+pelatihan yang diadakan hacktiv8 untuk memperdalam pemahaman tentang website programmer
