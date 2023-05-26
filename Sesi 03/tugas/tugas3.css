@@ -1,0 +1,119 @@
+html {
+  background-color: aliceblue;
+}
+
+body {
+  margin: 0;
+}
+
+nav {
+  background-color: white;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 20px 12px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  text-transform: uppercase;
+  padding: 6px;
+}
+
+nav ul li a:hover {
+  background-color: aliceblue;
+}
+
+section {
+  margin: 20px;
+}
+
+section.top {
+  display: flex;
+  background-color: white;
+  padding: 1rem;
+}
+
+.profile-photo img{ 
+  border-radius: 100%;
+  border : orangered solid 2px;
+}
+
+.profile-photo {
+  margin-right: 1rem;
+}
+
+.profile-text {
+  margin-right: 1rem;
+}
+
+.profile-text h2 {
+  font-size: 14px;
+  font-weight: 400;
+
+}
+
+.action button:first-child {
+  padding: 10px;
+  background-color: blue;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.action button:last-child {
+  padding: 10px;
+  background-color: white;
+  color: green;
+  border-radius: 8px;
+  border: green 1px solid;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#profile {
+  display: flex;
+  flex-direction: row;
+}
+
+#detail table td {
+  height: 3rem;
+}
+
+#detail table tr td:first-child {
+  font-weight: 700;
+}
+
+form {
+  background-color: white;
+}
+
+form input {
+  width: 100%;
+  margin-bottom: 16px;
+  height: 2.5rem;
+}
+
+form input[type="submit"] {
+  margin: 0;
+  background-color: green;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.form-class {
+  width: 100%;
+  padding: 1rem;
+}
+
+/* tambahkan CSS untuk section profile disini */
