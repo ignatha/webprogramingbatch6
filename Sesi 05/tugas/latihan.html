@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Prapbowo Ignatha Dharma</title>
+</head>
+<body>
+    <label>Pesan :</label>
+    <input id="pesan" type="text">
+    <br>
+    <label>Berapa Kali:</label>
+    <input id="iterasi" type="number">
+    <br>
+    <button onclick="cetak()">Cetak!</button>
+    <ol id="list"></ol>
+
+    <script>
+        function cetak(){
+            var pesan = document.getElementById('pesan').value
+            var iterasi = document.getElementById('iterasi').value
+        
+            var list = document.getElementById('list')
+
+            for (let index = 0; index < iterasi; index++) {
+                const para = document.createElement("li")
+                const node = document.createTextNode(pesan)
+                para.appendChild(node)
+
+                list.appendChild(para)
+            }
+        }
+    </script>
+</body>
+</html>
