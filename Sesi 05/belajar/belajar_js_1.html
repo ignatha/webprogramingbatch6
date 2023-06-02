@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar JS 1</title>
+</head>
+<body>
+    
+    // belajar variable
+    <h2>Variable</h2>
+    <h3 id="name"></h3>
+    <span id="lokasi"></span>
+
+    <br>
+    <br>
+    <h2>Tipe Data</h2>
+    <span id="dataNumber"></span>
+    <br>
+    <span id="dataString"></span>
+    <br>
+    <span id="dataArray"></span>
+    <br>
+    <span id="pendidikan" ></span>
+    <br>
+    <br>
+    <h2>Aritmatika</h2>
+    <span id="aritmatika"></span>
+   
+<script>
+    // VARIABLE
+    var name = "Prapbowo Ignatha"
+    var lokasi = "Sidoarjo"
+
+    document.getElementById('name').innerHTML = name;
+    document.getElementById('lokasi').innerHTML = lokasi;
+
+    // TIPE DATA
+
+    // number
+    var dataNumber = 9
+    document.getElementById('dataNumber').innerHTML = dataNumber
+
+    // string
+    var dataString = "Nama saya adalah Prapbowo"
+    document.getElementById('dataString').innerHTML = dataString
+
+    // array
+    var dataArray = ['sepak bola','berenang','bersepeda']
+    document.getElementById('dataArray').innerHTML = dataArray[2]
+
+    // object
+    var dataObject = {
+        sd : 'sdn mojoruntut 1',
+        smp : 'smpn 1 krembung',
+        smk : 'smkn 3 buduran',
+        sarjana : 'Universitas Muhammadiyah Sidoarjo'
+    }
+    document.getElementById('pendidikan').innerHTML = `SD : ${dataObject.sd}<br>SMP : ${dataObject.smp}<br>SMK : ${dataObject.smk}<br>Perguruan Tinggi : ${dataObject.sarjana}`
+
+
+    // ARITMATIKA
+    var bilangan1 = 6
+    var bilangan2 = 2
+
+    var jumlah = bilangan1+bilangan2
+    var kurang = bilangan1-bilangan2
+    var kali = bilangan1*bilangan2
+    var bagi = bilangan1/bilangan2
+    var mod = bilangan1 % bilangan2
+
+    document.getElementById('aritmatika').innerHTML = `Jumlah  = ${jumlah}<br>Kurang = ${kurang}<br>Kali : ${kali}<br>Bagi : ${bagi}<br>Modulus : ${mod}`
+
+</script>
+</body>
+</html>

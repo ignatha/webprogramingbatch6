@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar js 2</title>
+</head>
+<body>
+    <h3>Hitung Maju Mundur :</h3>
+    <button id="maju" onclick="hitung('maju')" >Maju</button>
+    <button id="mundur" onclick="hitung('mundur')" >Mundur</button>
+    <br>
+    <span id="angka">0</span>
+    <script>
+        
+        function hitung(tipe){
+            var nilai = parseInt(document.getElementById('angka').innerHTML)
+
+            switch (tipe) {
+                case 'maju':
+                    nilai++
+                    break;
+                case 'mundur':
+                    nilai--
+                    break
+            }
+
+            document.getElementById('angka').innerHTML = nilai
+        }
+    </script>
+</body>
+</html>
