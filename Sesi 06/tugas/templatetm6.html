@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tugas Mandiri 6</title>
+    <title>Tugas Mandiri 6 Prapbowo Ignatha Dharma</title>
 </head>
 
 <body>
 
-    <p id="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    <h1>interval stop : <span id="count">20</span></h1>
+    <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Quo quaerat recusandae qui ullam eaque cumque ea fugit,
         debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni,
         maiores in?</p>
@@ -18,30 +19,45 @@
 
     <script>
 
-        var para = document.getElementById('paragraf')
+        var para = document.getElementsByClassName('paragraf')
 
         for (let index = 1; index <= 3; index++) {
-            let clone = para.cloneNode(true)
-            clone.id = 'paragraf'+index
+            let clone = para[0].cloneNode(true)
+            clone.classList.add('paragraf')
             document.body.appendChild(clone)
         }
 
+        var intervalColor = setInterval(changeColor, 2000)
+        var stop = 20000
+
         function changeColor() 
         {
-            document.getElementById('paragraf').style.color = "blue"
-            document.getElementById('paragraf1').style.color = "red"
-            document.getElementById('paragraf2').style.color = "yellow"
-            document.getElementById('paragraf3').style.color = "green"
+
+            para[0].style.color = "blue"
+            para[1].style.color = "red"
+            para[2].style.color = "yellow"
+            para[3].style.color = "green"
+
+            stop -= 1000
+            document.getElementById('count').innerHTML = parseInt(stop/1000)
 
             setTimeout(() => {
-                document.getElementById('paragraf').style.color = "black"
-                document.getElementById('paragraf1').style.color = "black"
-                document.getElementById('paragraf2').style.color = "black"
-                document.getElementById('paragraf3').style.color = "black"
-            }, 1000);
-        }
+                para[0].style.color = "black"
+                para[1].style.color = "black"
+                para[2].style.color = "black"
+                para[3].style.color = "black"
 
-        setInterval(changeColor, 2000);
+                stop -= 1000
+                document.getElementById('count').innerHTML = parseInt(stop/1000)
+
+                if (stop <= 0) {
+                    clearInterval(intervalColor)
+                    alert('interval telah di stop')
+                }
+
+            }, 1000)
+
+        }
        
     </script>
 
